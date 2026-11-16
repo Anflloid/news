@@ -1,0 +1,218 @@
+/* Головна */
+.hero h1 {
+  margin: 8px 0 4px;
+  font-size: 34px;
+}
+
+.hero p {
+  margin: 0 0 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.search {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.sort {
+  flex: 0 0 240px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* Адаптивна сітка: стільки колонок, скільки вміщається */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+}
+
+/* Стаття */
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.back {
+  display: block;
+  width: fit-content;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.articleTitle {
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+.lead {
+  font-size: 20px;
+  color: var(--color-muted);
+  margin: 0 0 16px;
+}
+
+.articleMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.cover {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.rating {
+  padding: 20px 24px;
+  margin-top: 32px;
+}
+
+.rating h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+/* Вхід і реєстрація */
+.authCard {
+  max-width: 420px;
+  margin: 24px auto;
+  padding: 28px;
+}
+
+.authCard h1 {
+  margin-top: 0;
+}
+
+.hint {
+  font-size: 14px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+}
+
+/* Адмін-панель */
+.adminHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.stats > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats strong {
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.table th,
+.table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.formCard {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.formCard h1 {
+  margin-top: 0;
+}
+
+/* Мобільні пристрої */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+
+  .sort {
+    flex-basis: auto;
+  }
+
+  .articleTitle {
+    font-size: 26px;
+  }
+
+  .lead,
+  .content {
+    font-size: 17px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

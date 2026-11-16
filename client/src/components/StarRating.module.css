@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.stars {
+  display: flex;
+}
+
+.star {
+  background: none;
+  border: none;
+  padding: 0 2px;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--color-border);
+  cursor: pointer;
+  transition: transform 0.1s, color 0.1s;
+}
+
+.star:disabled {
+  cursor: default;
+}
+
+.star:not(:disabled):hover {
+  transform: scale(1.15);
+}
+
+.filled {
+  color: var(--color-star);
+}
+
+.info {
+  color: var(--color-muted);
+  font-weight: 600;
+}

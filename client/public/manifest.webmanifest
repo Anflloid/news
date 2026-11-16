@@ -1,0 +1,13 @@
+{
+  "name": "Новинний портал",
+  "short_name": "Новини",
+  "description": "Свіжі новини з коментарями та рейтингом",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2563eb",
+  "lang": "uk",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
